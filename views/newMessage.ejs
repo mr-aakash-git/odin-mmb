@@ -4,14 +4,22 @@
     <link rel="stylesheet" href="/stylesForm.css">
   </head>
   <body>
+    <div class="container">
+      <h1 class="title">New Message</h1>
+      <a href="/">Back</a>
     <form method="POST" action="/new">
-        <label for="author">Author</label>
+      <div class="sub-div">
+        <label for="author">Author:</label>
         <input id="author" name="author"></input>
+        </div>
         <br>
-        <label for="msg">Message</label>
+        <div class="sub-div">
+        <label for="msg">Message:</label>
         <textarea id="msg" name="msg"></textarea>
+        </div>
         <br>
         <button type="submit">Submit</button>
     </form>
+    </div>
   </body>
 </html>

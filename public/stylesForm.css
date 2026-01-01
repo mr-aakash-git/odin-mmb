@@ -1,10 +1,22 @@
 body {
+    width: 90%;
     background-color: black;
-    color: yellow;
+    color: lightgrey;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1rem;
 }
 
 form {
@@ -12,16 +24,71 @@ form {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
+}
+
+.sub-div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
 }
 
 label {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color: lightblue;
+}
+
+.title {
+    font-weight: bold;
+    color: deeppink;
 }
 
 input, textarea {
-    background-color: darkslategray;
-    color: lightgoldenrodyellow;
+    background-color: black;
+    border: 2px solid lightblue;
+    border-radius: 1rem;
+    color: lightgrey;
+}
+
+a {
+    margin-left: 80%;
+    color: yellowgreen;
+    text-decoration: none;
+    background-color: black;
+    border: 2px solid yellowgreen;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+}
+
+a:hover {
+    color: yellow;
+    border: 2px solid yellow;
+}
+
+a:active {
+    color: grey;
+    border: 2px solid grey;
+}
+
+button {
+    color: white;
+    text-decoration: none;
+    background-image: linear-gradient(to right, blue, purple);
     border: 2px solid white;
-    border-radius: 4px;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+}
+
+button:hover {
+    transform: scale(1.2);
+    transition: 0.15s;
+}
+
+button:active {
+    background-color: black;
 }
