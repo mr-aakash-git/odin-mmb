@@ -58,31 +58,95 @@ body {
   font-size: 0.5rem;
 }
 
-.newUser {
-  background-color: black;
-  border: 2px solid orange;
-  color: orange;
-  font-size: 1rem;
-  border-radius: 0.5rem;
-}
+
 
 a {
   color: orange;
   text-decoration: none;
+  background-color: black;
+  border: 2px solid orange;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
 }
 
 a:hover {
   color: yellowgreen;
+  text-decoration: none;
+  background-color: black;
+  border: 2px solid yellowgreen;
+  font-size: 1rem;
+  border-radius: 0.5rem;
 }
 
 a:active {
   color: grey;
+  border: 2px solid grey;
 }
 
-.newUser:hover {
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.view-btn {
+  color: deepskyblue;
+  text-decoration: none;
   background-color: black;
-  border: 2px solid yellowgreen;
-  color: yellowgreen;
-  font-size: 1rem;
-  border-radius: 0.5rem;
+  border: 1px solid deepskyblue;
+  font-size: 0.8rem;
+  border-radius: 0.4rem;
+  padding: 0.2rem;
+}
+
+.view-btn:hover {
+  color: lightskyblue;
+  text-decoration: none;
+  background-color: black;
+  border: 1px solid lightskyblue;
+  font-size: 0.8rem;
+  border-radius: 0.4rem;
+  padding: 0.2rem;
+}
+
+.view-btn:active {
+  color: grey;
+  text-decoration: none;
+  background-color: black;
+  border: 1px solid grey;
+  font-size: 0.8rem;
+  border-radius: 0.4rem;
+  padding: 0.2rem;
+}
+
+.dlt-btn {
+  color: red;
+  text-decoration: none;
+  background-color: black;
+  border: 1px solid red;
+  font-size: 0.8rem;
+  border-radius: 0.4rem;
+  padding: 0.2rem;
+}
+
+.dlt-btn:hover {
+  color: lightcoral;
+  text-decoration: none;
+  background-color: black;
+  border: 1px solid lightcoral;
+  font-size: 0.8rem;
+  border-radius: 0.4rem;
+  padding: 0.2rem;
+}
+
+.dlt-btn:active {
+  color: grey;
+  text-decoration: none;
+  background-color: black;
+  border: 1px solid grey;
+  font-size: 0.8rem;
+  border-radius: 0.4rem;
+  padding: 0.2rem;
 }

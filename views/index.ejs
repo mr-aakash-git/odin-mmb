@@ -9,7 +9,7 @@
    </header>
    <div class="divi">
    <div class="sub-div">
-    <button class="newUser"><a href="/new">Become an user</a></button>
+    <a class="newUser" href="/new">Become an user</a>
    </div>
    <div class="container">
   
@@ -18,6 +18,10 @@
       <h3 class="author"><%= msg.user %></h3>
       <p class="msg-txt"><%= msg.text %></p>
       <p class="time"><%= msg.added %></p>
+      <div class="btn-container">
+         <button class="view-btn">View</button>
+         <button class="dlt-btn">Delete</button>
+      </div>
       </div>
     <%  }) %>
   </div>
