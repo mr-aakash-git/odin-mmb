@@ -17,10 +17,12 @@
       <div class="msg-box">
       <h3 class="author"><%= msg.user %></h3>
       <p class="msg-txt"><%= msg.text %></p>
-      <p class="time"><%= msg.added %></p>
+      <p class="time"><%= new Date(msg.added) %></p>
       <div class="btn-container">
-         <button class="view-btn">View</button>
-         <button class="dlt-btn">Delete</button>
+         <a href="/message/<%= msg.added %>" class="view-btn">View</a>
+         <form method="POST" action="/message/<%= msg.added %>/delete">
+          <button type="submit" class="dlt-btn">Delete</button>
+         </form>
       </div>
       </div>
     <%  }) %>

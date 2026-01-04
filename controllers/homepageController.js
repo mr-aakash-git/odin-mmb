@@ -5,7 +5,7 @@ const getHomepage = async (req, res) => {
 };
 
 const pushingNewMsgs = async (req, res) => {
-  messages.push({ text: req.body.msg, user: req.body.author, added: new Date() });
+  messages.push({ text: req.body.msg, user: req.body.author, added: Date.now() });
   res.redirect('/');
 };
 
