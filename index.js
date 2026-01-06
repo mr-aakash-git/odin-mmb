@@ -16,7 +16,7 @@ app.set("view engine", "ejs");
 const assetsPath = path.join(__dirname, "public");
 app.use(express.static(assetsPath));
 
-const PORT = process.env.PORT_NUM;
+const PORT = process.env.PORT_NUM || 3000;
 app.listen(PORT, (error) => {
   if (error) {
     throw error;
